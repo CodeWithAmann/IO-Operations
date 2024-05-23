@@ -1,0 +1,30 @@
+Input and Output Stream in Java:
+
+Answer: An input stream is a sequence of data that you can read from, while an output stream is a sequence of data that you can write to in Java.
+Methods of OutputStream:
+
+Answer: Some of the common methods of the OutputStream class in Java include write(int b), flush(), close(), etc.
+Serialization in Java:
+
+Answer: Serialization in Java is the process of converting an object into a byte stream, which can then be persisted into a file or transmitted over a network. This allows objects to be easily saved, sent, and reconstructed later.
+The Serializable interface in Java:
+
+Answer: The Serializable interface in Java is a marker interface that indicates that the objects of a class can be serialized. It does not contain any methods or fields and acts as a flag to the compiler.
+Deserialization in Java:
+
+Answer: Deserialization in Java is the process of converting a byte stream back into an object. It is the reverse process of serialization.
+How is serialization achieved in Java:
+
+Answer: Serialization in Java is achieved by implementing the Serializable interface in the class whose objects need to be serialized. Additionally, transient variables can be marked as non-serializable to exclude them from the serialization process.
+How is deserialization achieved in Java:
+
+Answer: Deserialization in Java is achieved by reading the serialized byte stream and reconstructing the object using the readObject() method provided by the ObjectInputStream class.
+How can you avoid certain member variables of a class from getting serialized:
+
+Answer: Certain member variables of a class can be avoided from getting serialized by marking them as transient. Transient variables are not part of the serialization process and are not saved when the object is serialized.
+Classes available in the Java IO File Classes API:
+
+Answer: Some of the classes available in the Java IO File Classes API include File, FileInputStream, FileOutputStream, FileReader, FileWriter, etc.
+Difference between Externalizable and Serialization interface:
+
+Answer: The main difference between Externalizable and Serializable interfaces in Java is that Serializable is a marker interface with default serialization behavior provided by Java, while Externalizable provides control over the serialization and deserialization process by implementing the writeExternal() and readExternal() methods. Additionally, Serializable is simpler to use, while Externalizable offers more flexibility and control.
